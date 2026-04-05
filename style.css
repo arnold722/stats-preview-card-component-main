@@ -70,3 +70,27 @@ body {
 .card-text span {
   color: var(--accent);
 }
+
+.card-text p {
+  color: var(--white-75);
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* ================= STATS ================= */
+.stats {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.stats h2 {
+  font-weight: 700;
+}
+
+.stats p {
+  font-family: 'Lexend Deca', sans-serif;
+  color: var(--white-60);
+  font-size: 12px;
+  text-transform: uppercase;
+}
