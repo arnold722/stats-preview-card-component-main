@@ -28,3 +28,45 @@ body {
   align-items: center;
   min-height: 100vh;
 }
+
+/* ================= CARD ================= */
+.card {
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 1000px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* ================= IMAGE ================= */
+.card-image {
+  background: url('images/image-header-mobile.jpg') center/cover no-repeat;
+  height: 250px;
+  position: relative;
+}
+
+/* Overlay violet */
+.card-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--accent);
+  opacity: 0.5;
+}
+
+/* ================= TEXT ================= */
+.card-text {
+  padding: 30px;
+  text-align: center;
+}
+
+.card-text h1 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.card-text span {
+  color: var(--accent);
+}
