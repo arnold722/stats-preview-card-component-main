@@ -94,3 +94,28 @@ body {
   font-size: 12px;
   text-transform: uppercase;
 }
+
+
+/* ================= RESPONSIVE ================= */
+@media (min-width: 768px) {
+  .card {
+    flex-direction: row-reverse;
+  }
+
+  .card-image {
+    background: url('images/image-header-desktop.jpg') center/cover no-repeat;
+    width: 50%;
+    height: auto;
+  }
+
+  .card-text {
+    width: 50%;
+    text-align: left;
+    padding: 50px;
+  }
+
+  .stats {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
